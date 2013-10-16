@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>TestNG:  Day.az</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Day.az</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 15 12:12:37 EEST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>164 seconds (164319 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='content.Playlist.AddAndDelete()'><b>AddAndDelete</b><br>Test class: content.Playlist<br>Test method: Добавляет и удаляет треки в плейлисте</td>
+<td></td>
+<td>9</td>
+<td>content.Playlist@2dc2caa7</td></tr>
+<tr>
+<td title='content.NewMusic.CheckAlbums()'><b>CheckAlbums</b><br>Test class: content.NewMusic<br>Test method: Проверяет отображение альбомов на <<Новинки>></td>
+<td></td>
+<td>1</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Music.CheckArtists()'><b>CheckArtists</b><br>Test class: content.Music<br>Test method: Проверяет отображение артистов на <<Музыка>></td>
+<td></td>
+<td>4</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.CheckArtists()'><b>CheckArtists</b><br>Test class: content.AzerMusic<br>Test method: Проверяет отображение артистов на <<Айзербайджанская>></td>
+<td></td>
+<td>3</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.NewMusic.CheckArtists()'><b>CheckArtists</b><br>Test class: content.NewMusic<br>Test method: Проверяет отображение артистов на <<Новинки>></td>
+<td></td>
+<td>1</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Music.CheckBlocks()'><b>CheckBlocks</b><br>Test class: content.Music<br>Test method: Проверяет отображение блоков на <<Музыка>></td>
+<td></td>
+<td>1</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.CheckBlocks()'><b>CheckBlocks</b><br>Test class: content.AzerMusic<br>Test method: Проверяет отображение блоков на <<Айзербайджанская>></td>
+<td></td>
+<td>2</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.NewMusic.CheckBlocks()'><b>CheckBlocks</b><br>Test class: content.NewMusic<br>Test method: Проверяет отображение блоков на <<Новинки>></td>
+<td></td>
+<td>1</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Music.CheckGenres()'><b>CheckGenres</b><br>Test class: content.Music<br>Test method: Проверяет отображение жанров на <<Музыка>></td>
+<td></td>
+<td>3</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.CheckGenres()'><b>CheckGenres</b><br>Test class: content.AzerMusic<br>Test method: Проверяет отображение жанров на <<Айзербайджанская>></td>
+<td></td>
+<td>3</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.Music.CheckHeader()'><b>CheckHeader</b><br>Test class: content.Music<br>Test method: Проверяет ссылки на шапке на <<Музыка>></td>
+<td></td>
+<td>3</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.CheckHeader()'><b>CheckHeader</b><br>Test class: content.AzerMusic<br>Test method: Проверяет ссылки на шапке на <<Азербайджанская>></td>
+<td></td>
+<td>3</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.Playlist.CheckHeader()'><b>CheckHeader</b><br>Test class: content.Playlist<br>Test method: Проверяет ссылки на шапке <<Мой плейлист>></td>
+<td></td>
+<td>2</td>
+<td>content.Playlist@2dc2caa7</td></tr>
+<tr>
+<td title='content.NewMusic.CheckTitle()'><b>CheckTitle</b><br>Test class: content.NewMusic<br>Test method: проверяет отображение и корректоность имен блоков на <<Новинки>></td>
+<td></td>
+<td>2</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Music.CheckTitles()'><b>CheckTitles</b><br>Test class: content.Music<br>Test method: Проверяет отображение и корректоность названий блоков на <<Музыка>></td>
+<td></td>
+<td>2</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.CheckTitles()'><b>CheckTitles</b><br>Test class: content.AzerMusic<br>Test method: Проверяет отображение и корректность названий блоков на <<Айзербайджанская>></td>
+<td></td>
+<td>1</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.Playlist.CleanPlaylist()'><b>CleanPlaylist</b><br>Test class: content.Playlist<br>Test method: Очищает плейлист от треков</td>
+<td></td>
+<td>3</td>
+<td>content.Playlist@2dc2caa7</td></tr>
+<tr>
+<td title='user.LoginTest.LogIn()'><b>LogIn</b><br>Test class: user.LoginTest<br>Test method: Тестируем логин</td>
+<td></td>
+<td>30</td>
+<td>user.LoginTest@3ac113ae</td></tr>
+<tr>
+<td title='content.NewMusic.NewMusicHeader()'><b>NewMusicHeader</b><br>Test class: content.NewMusic<br>Test method: Проверяет ссылки на шапке на <<Новинки>></td>
+<td></td>
+<td>3</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Music.PlayMusic()'><b>PlayMusic</b><br>Test class: content.Music<br>Test method: Проверяет играет ли музыка на странице скачки треков на <<Музыка>></td>
+<td></td>
+<td>61</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.Playlist.PlayTrack()'><b>PlayTrack</b><br>Test class: content.Playlist<br>Test method: Проверяет играет ли трек на <<Мой плейлист>></td>
+<td></td>
+<td>6</td>
+<td>content.Playlist@2dc2caa7</td></tr>
+<tr>
+<td title='content.Music.SocialLinks()'><b>SocialLinks</b><br>Test class: content.Music<br>Test method: Проверяет отображение соц сетей на <<Айзербайджанская>></td>
+<td></td>
+<td>2</td>
+<td>content.Music@53967499</td></tr>
+<tr>
+<td title='content.AzerMusic.SocialLinks()'><b>SocialLinks</b><br>Test class: content.AzerMusic<br>Test method: Проверяет отображение соц сетей на <<Айзербайджанская>></td>
+<td></td>
+<td>4</td>
+<td>content.AzerMusic@35ba47d3</td></tr>
+<tr>
+<td title='content.NewMusic.SocialLinks()'><b>SocialLinks</b><br>Test class: content.NewMusic<br>Test method: Проверяет отображение соц сетей на <<Айзербайджанская>></td>
+<td></td>
+<td>1</td>
+<td>content.NewMusic@59f322a4</td></tr>
+<tr>
+<td title='content.Playlist.SocialLinks()'><b>SocialLinks</b><br>Test class: content.Playlist<br>Test method: Проверяет отображение соц сетей на <<Мой плейлист>></td>
+<td></td>
+<td>2</td>
+<td>content.Playlist@2dc2caa7</td></tr>
+</table><p>
+</body>
+</html>

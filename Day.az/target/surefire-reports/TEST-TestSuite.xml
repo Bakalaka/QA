@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="135.558" tests="27" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Day.az"/>
+    <property name="PWD" value="/home/vadim/Jenkins"/>
+    <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path"/>
+    <property name="JENKINS_HOME" value="/home/vadim/.jenkins"/>
+    <property name="XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0"/>
+    <property name="PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"/>
+    <property name="HUDSON_SERVER_COOKIE" value="ca45d131e677c13b"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="WINDOWID" value="52428806"/>
+    <property name="java.runtime.version" value="1.7.0_40-b43"/>
+    <property name="UBUNTU_MENUPROXY" value="libappmenu.so"/>
+    <property name="user.name" value="vadim"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="XDG_SESSION_COOKIE" value="22b8bb037e74fc2ce3173a7b0000000a-1381738220.462964-1264978521"/>
+    <property name="SSH_AGENT_PID" value="1429"/>
+    <property name="user.language" value="ru"/>
+    <property name="BUILD_DISPLAY_NAME" value="#732"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64"/>
+    <property name="DISPLAY" value=":0.0"/>
+    <property name="GDMSESSION" value="ubuntu"/>
+    <property name="java.version" value="1.7.0_40"/>
+    <property name="user.timezone" value="Europe/Zaporozhye"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="TERM" value="xterm"/>
+    <property name="NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="2013-10-16_14-00-29"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="UA"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre"/>
+    <property name="XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
+    <property name="os.version" value="3.5.0-41-generic"/>
+    <property name="GNOME_KEYRING_CONTROL" value="/tmp/keyring-GcqcGS"/>
+    <property name="SESSION_MANAGER" value="local/pc:@/tmp/.ICE-unix/1393,unix/pc:/tmp/.ICE-unix/1393"/>
+    <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="24.0-b56"/>
+    <property name="DESKTOP_SESSION" value="ubuntu"/>
+    <property name="SHLVL" value="1"/>
+    <property name="_" value="/usr/bin/java"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="JAVA_HOME" value="/usr/lib/jvm/java-7-oracle"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="LOGNAME" value="vadim"/>
+    <property name="HOME" value="/home/vadim"/>
+    <property name="user.home" value="/home/vadim"/>
+    <property name="BUILD_TAG" value="jenkins-Day.az-732"/>
+    <property name="JENKINS_SERVER_COOKIE" value="ca45d131e677c13b"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-Tk3Cr8bFmn,guid=e802da02d861d23bac26dcd70000005d"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/home/vadim/Maven/apache-maven-3.1.0"/>
+    <property name="XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0"/>
+    <property name="java.class.path" value="/home/vadim/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.4.jar:/home/vadim/Maven/apache-maven-3.1.0/boot/plexus-classworlds-2.4.2.jar:/home/vadim/Maven/apache-maven-3.1.0/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main /home/vadim/Maven/apache-maven-3.1.0 /home/vadim/.jenkins/war/WEB-INF/lib/remoting-2.32.jar /home/vadim/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.4.jar /home/vadim/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.4.jar 43990"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/usr/lib/jvm/java-7-oracle/bin"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/home/vadim/Maven/apache-maven-3.1.0"/>
+    <property name="XDG_CURRENT_DESKTOP" value="Unity"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="HUDSON_HOME" value="/home/vadim/.jenkins"/>
+    <property name="MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path"/>
+    <property name="PATH+MAVEN" value="/home/vadim/Maven/apache-maven-3.1.0/bin"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Day.az/732/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"/>
+    <property name="OLDPWD" value="/home/vadim"/>
+    <property name="GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated"/>
+    <property name="SSH_AUTH_SOCK" value="/tmp/keyring-GcqcGS/ssh"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="user.dir" value="/home/vadim/workspace/Day.az"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/Day.az/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="/home/vadim/Maven/apache-maven-3.1.0"/>
+    <property name="XAUTHORITY" value="/home/vadim/.Xauthority"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="732"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="COMPIZ_CONFIG_PROFILE" value="ubuntu"/>
+    <property name="GPG_AGENT_INFO" value="/tmp/keyring-GcqcGS/gpg:0:1"/>
+    <property name="COLORTERM" value="gnome-terminal"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="LANG" value="ru_UA.UTF-8"/>
+    <property name="maven3.interceptor" value="/home/vadim/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.4.jar"/>
+    <property name="WORKSPACE" value="/home/vadim/.jenkins/jobs/Day.az/workspace"/>
+    <property name="maven3.interceptor.common" value="/home/vadim/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.4.jar"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="LANGUAGE" value="ru_UA:ru"/>
+    <property name="USER" value="vadim"/>
+    <property name="XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"/>
+  </properties>
+  <testcase name="LogIn" classname="user.LoginTest" time="23.476"/>
+  <testcase name="SocialLinks" classname="content.Music" time="7.243"/>
+  <testcase name="CheckGenres" classname="content.Music" time="4.849"/>
+  <testcase name="CheckArtists" classname="content.Music" time="2.232"/>
+  <testcase name="CheckTitles" classname="content.Music" time="1.635"/>
+  <testcase name="CheckBlocks" classname="content.Music" time="3.976"/>
+  <testcase name="PlayMusic" classname="content.Music" time="35.933">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at page.ContentPage.playMusic(ContentPage.java:208)
+	at content.Music.PlayMusic(Music.java:122)
+</failure>
+    <system-out>--------------------------------------
+Проверяет играет ли музыка на странице скачки треков на &lt;&lt;Музыка&gt;&gt;
+STARTED: Class = Music Method = PlayMusic
+[page.ContentPage.playMusic] FAILED: by track doesnt olay on this page http://music.day.az/249443-alex-bah-feat-kaskade-move-for-me-(remix)
+</system-out>
+  </testcase>
+  <testcase name="SocialLinks" classname="content.AzerMusic" time="2.567"/>
+  <testcase name="CheckGenres" classname="content.AzerMusic" time="2.789"/>
+  <testcase name="CheckArtists" classname="content.AzerMusic" time="2.291"/>
+  <testcase name="CheckTitles" classname="content.AzerMusic" time="1.51"/>
+  <testcase name="CheckBlocks" classname="content.AzerMusic" time="1.448"/>
+  <testcase name="SocialLinks" classname="content.NewMusic" time="1.974"/>
+  <testcase name="CheckArtists" classname="content.NewMusic" time="1.593"/>
+  <testcase name="CheckTitle" classname="content.NewMusic" time="1.191"/>
+  <testcase name="CheckBlocks" classname="content.NewMusic" time="1.366"/>
+  <testcase name="CheckAlbums" classname="content.NewMusic" time="2.15"/>
+  <testcase name="CheckHeader" classname="content.Music" time="4.539"/>
+  <testcase name="CheckHeader" classname="content.AzerMusic" time="3.667"/>
+  <testcase name="NewMusicHeader" classname="content.NewMusic" time="2.721"/>
+  <testcase name="CheckHeader" classname="content.Playlist" time="3.009"/>
+  <testcase name="SocialLinks" classname="content.Playlist" time="1.547"/>
+  <testcase name="PlayTrack" classname="content.Playlist" time="6.033"/>
+  <testcase name="CleanPlaylist" classname="content.Playlist" time="2.163"/>
+  <testcase name="AddAndDelete" classname="content.Playlist" time="9.252"/>
+  <testcase name="NewMusicHeader" classname="content.Upload" time="3.553"/>
+  <testcase name="CheckBtn" classname="content.Upload" time="0.851"/>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="music.day">
+   <dependencies>
+   <group name="Header" depends-on="Login"></group>
+   <group name="Playlist" depends-on="Login"></group>
+    <group name="Upload" depends-on="Login"></group>
+   </dependencies>
+    <listeners>
+    <listener class-name="basic.Log"></listener>
+    <listener class-name="basic.ScreenShotOnFailure"></listener>
+    </listeners>
+     <classes>
+     <class name="user.LoginTest"/>
+      <class name="content.Music"/>
+      <class name="content.NewMusic"/>
+      <class name="content.AzerMusic"/>
+      <class name="content.Playlist"/>
+      <class name="content.Upload"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

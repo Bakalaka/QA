@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods, 1 failed,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Playlist" hash-for-method="PlayTrack">PlayTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Playlist" hash-for-method="AddAndDelete">AddAndDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="CheckAlbums">CheckAlbums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="CheckArtists">CheckArtists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="CheckArtists">CheckArtists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="CheckArtists">CheckArtists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="CheckBlocks">CheckBlocks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="CheckBlocks">CheckBlocks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="CheckBlocks">CheckBlocks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Upload" hash-for-method="CheckBtn">CheckBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="CheckGenres">CheckGenres</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="CheckGenres">CheckGenres</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="CheckHeader">CheckHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Playlist" hash-for-method="CheckHeader">CheckHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="CheckHeader">CheckHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="CheckTitle">CheckTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="CheckTitles">CheckTitles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="CheckTitles">CheckTitles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Playlist" hash-for-method="CleanPlaylist">CleanPlaylist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="user.LoginTest" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Upload" hash-for-method="NewMusicHeader">NewMusicHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="NewMusicHeader">NewMusicHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="PlayMusic">PlayMusic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.NewMusic" hash-for-method="SocialLinks">SocialLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Playlist" hash-for-method="SocialLinks">SocialLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.AzerMusic" hash-for-method="SocialLinks">SocialLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Music" hash-for-method="SocialLinks">SocialLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">content.Playlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlayTrack">
+                  </a> <!-- PlayTrack -->
+                  <span class="method-name">PlayTrack</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=29.0.1547.76)
+  (Driver info: chromedriver=2.3,platform=Linux 3.5.0-41-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.35.0&apos;, revision: &apos;c916b9d&apos;, time: &apos;2013-08-12 15:42:01&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.5.0-41-generic&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: 26e6c1f7e83c5135a5eb18bc9830cd96
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.3}, rotatable=false, locationContextEnabled=true, version=29.0.1547.76, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at content.Playlist.PlayTrack(Playlist.java:66)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Проверяет играет ли трек на <<Мой плейлист>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.AzerMusic</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckArtists">
+                  </a> <!-- CheckArtists -->
+                  <span class="method-name">CheckArtists</span>
+                  <em>
+(Проверяет отображение артистов на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBlocks">
+                  </a> <!-- CheckBlocks -->
+                  <span class="method-name">CheckBlocks</span>
+                  <em>
+(Проверяет отображение блоков на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckGenres">
+                  </a> <!-- CheckGenres -->
+                  <span class="method-name">CheckGenres</span>
+                  <em>
+(Проверяет отображение жанров на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckHeader">
+                  </a> <!-- CheckHeader -->
+                  <span class="method-name">CheckHeader</span>
+                  <em>
+(Проверяет ссылки на шапке на <<Азербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckTitles">
+                  </a> <!-- CheckTitles -->
+                  <span class="method-name">CheckTitles</span>
+                  <em>
+(Проверяет отображение и корректность названий блоков на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SocialLinks">
+                  </a> <!-- SocialLinks -->
+                  <span class="method-name">SocialLinks</span>
+                  <em>
+(Проверяет отображение соц сетей на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.Music</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckArtists">
+                  </a> <!-- CheckArtists -->
+                  <span class="method-name">CheckArtists</span>
+                  <em>
+(Проверяет отображение артистов на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBlocks">
+                  </a> <!-- CheckBlocks -->
+                  <span class="method-name">CheckBlocks</span>
+                  <em>
+(Проверяет отображение блоков на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckGenres">
+                  </a> <!-- CheckGenres -->
+                  <span class="method-name">CheckGenres</span>
+                  <em>
+(Проверяет отображение жанров на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckHeader">
+                  </a> <!-- CheckHeader -->
+                  <span class="method-name">CheckHeader</span>
+                  <em>
+(Проверяет ссылки на шапке на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckTitles">
+                  </a> <!-- CheckTitles -->
+                  <span class="method-name">CheckTitles</span>
+                  <em>
+(Проверяет отображение и корректоность названий блоков на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlayMusic">
+                  </a> <!-- PlayMusic -->
+                  <span class="method-name">PlayMusic</span>
+                  <em>
+(Проверяет играет ли музыка на странице скачки треков на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SocialLinks">
+                  </a> <!-- SocialLinks -->
+                  <span class="method-name">SocialLinks</span>
+                  <em>
+(Проверяет отображение соц сетей на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.Upload</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBtn">
+                  </a> <!-- CheckBtn -->
+                  <span class="method-name">CheckBtn</span>
+                  <em>
+(Проверяет есть ли кнопка *загрузить* на <<Загрузить>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewMusicHeader">
+                  </a> <!-- NewMusicHeader -->
+                  <span class="method-name">NewMusicHeader</span>
+                  <em>
+(Проверяет ссылки на шапке на <<Загрузить>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.NewMusic</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckAlbums">
+                  </a> <!-- CheckAlbums -->
+                  <span class="method-name">CheckAlbums</span>
+                  <em>
+(Проверяет отображение альбомов на <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckArtists">
+                  </a> <!-- CheckArtists -->
+                  <span class="method-name">CheckArtists</span>
+                  <em>
+(Проверяет отображение артистов на <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBlocks">
+                  </a> <!-- CheckBlocks -->
+                  <span class="method-name">CheckBlocks</span>
+                  <em>
+(Проверяет отображение блоков на <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckTitle">
+                  </a> <!-- CheckTitle -->
+                  <span class="method-name">CheckTitle</span>
+                  <em>
+(проверяет отображение и корректоность имен блоков на <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewMusicHeader">
+                  </a> <!-- NewMusicHeader -->
+                  <span class="method-name">NewMusicHeader</span>
+                  <em>
+(Проверяет ссылки на шапке на <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SocialLinks">
+                  </a> <!-- SocialLinks -->
+                  <span class="method-name">SocialLinks</span>
+                  <em>
+(Проверяет отображение соц сетей на <<Айзербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.Playlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddAndDelete">
+                  </a> <!-- AddAndDelete -->
+                  <span class="method-name">AddAndDelete</span>
+                  <em>
+(Добавляет и удаляет треки в плейлисте)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckHeader">
+                  </a> <!-- CheckHeader -->
+                  <span class="method-name">CheckHeader</span>
+                  <em>
+(Проверяет ссылки на шапке <<Мой плейлист>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CleanPlaylist">
+                  </a> <!-- CleanPlaylist -->
+                  <span class="method-name">CleanPlaylist</span>
+                  <em>
+(Очищает плейлист от треков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SocialLinks">
+                  </a> <!-- SocialLinks -->
+                  <span class="method-name">SocialLinks</span>
+                  <em>
+(Проверяет отображение соц сетей на <<Мой плейлист>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">user.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn">
+                  </a> <!-- LogIn -->
+                  <span class="method-name">LogIn</span>
+                  <em>
+(Тестируем логин)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/vadim/workspace/Day.az/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;basic.Log&quot;/&gt;
+    &lt;listener class-name=&quot;basic.ScreenShotOnFailure&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;music.day&quot;&gt;
+    &lt;groups&gt;
+      &lt;dependencies&gt;
+        &lt;group depends-on=&quot;Login&quot; name=&quot;Header&quot;/&gt;
+        &lt;group depends-on=&quot;Login&quot; name=&quot;Playlist&quot;/&gt;
+        &lt;group depends-on=&quot;Login&quot; name=&quot;Upload&quot;/&gt;
+      &lt;/dependencies&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;user.LoginTest&quot;/&gt;
+      &lt;class name=&quot;content.Music&quot;/&gt;
+      &lt;class name=&quot;content.NewMusic&quot;/&gt;
+      &lt;class name=&quot;content.AzerMusic&quot;/&gt;
+      &lt;class name=&quot;content.Playlist&quot;/&gt;
+      &lt;class name=&quot;content.Upload&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- music.day --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">music.day (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Header</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CheckHeader</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NewMusicHeader</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LogIn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Playlist</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddAndDelete</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CheckHeader</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CleanPlaylist</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PlayTrack</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SocialLinks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Upload</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CheckBtn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NewMusicHeader</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PlayTrack')
+data.setCell(0, 2, 'content.Playlist')
+data.setCell(0, 3, 21262);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LogIn')
+data.setCell(1, 2, 'user.LoginTest')
+data.setCell(1, 3, 18743);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CleanPlaylist')
+data.setCell(2, 2, 'content.Playlist')
+data.setCell(2, 3, 11791);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddAndDelete')
+data.setCell(3, 2, 'content.Playlist')
+data.setCell(3, 3, 9991);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'PlayMusic')
+data.setCell(4, 2, 'content.Music')
+data.setCell(4, 3, 7473);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CheckHeader')
+data.setCell(5, 2, 'content.AzerMusic')
+data.setCell(5, 3, 4601);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CheckHeader')
+data.setCell(6, 2, 'content.Music')
+data.setCell(6, 3, 4489);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CheckAlbums')
+data.setCell(7, 2, 'content.NewMusic')
+data.setCell(7, 3, 4312);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NewMusicHeader')
+data.setCell(8, 2, 'content.Upload')
+data.setCell(8, 3, 4306);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'NewMusicHeader')
+data.setCell(9, 2, 'content.NewMusic')
+data.setCell(9, 3, 4068);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CheckHeader')
+data.setCell(10, 2, 'content.Playlist')
+data.setCell(10, 3, 3811);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'CheckGenres')
+data.setCell(11, 2, 'content.AzerMusic')
+data.setCell(11, 3, 3786);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CheckGenres')
+data.setCell(12, 2, 'content.Music')
+data.setCell(12, 3, 3616);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CheckArtists')
+data.setCell(13, 2, 'content.AzerMusic')
+data.setCell(13, 3, 2660);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CheckArtists')
+data.setCell(14, 2, 'content.Music')
+data.setCell(14, 3, 2544);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'SocialLinks')
+data.setCell(15, 2, 'content.NewMusic')
+data.setCell(15, 3, 2363);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'CheckBlocks')
+data.setCell(16, 2, 'content.NewMusic')
+data.setCell(16, 3, 2285);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'SocialLinks')
+data.setCell(17, 2, 'content.AzerMusic')
+data.setCell(17, 3, 2280);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'SocialLinks')
+data.setCell(18, 2, 'content.Music')
+data.setCell(18, 3, 2153);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'SocialLinks')
+data.setCell(19, 2, 'content.Playlist')
+data.setCell(19, 3, 2094);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'CheckTitles')
+data.setCell(20, 2, 'content.Music')
+data.setCell(20, 3, 2034);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'CheckArtists')
+data.setCell(21, 2, 'content.NewMusic')
+data.setCell(21, 3, 1750);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'CheckTitle')
+data.setCell(22, 2, 'content.NewMusic')
+data.setCell(22, 3, 1668);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'CheckBlocks')
+data.setCell(23, 2, 'content.AzerMusic')
+data.setCell(23, 3, 1587);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'CheckTitles')
+data.setCell(24, 2, 'content.AzerMusic')
+data.setCell(24, 3, 1522);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'CheckBlocks')
+data.setCell(25, 2, 'content.Music')
+data.setCell(25, 3, 1390);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'CheckBtn')
+data.setCell(26, 2, 'content.Upload')
+data.setCell(26, 3, 902);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PlayTrack</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href=fail-screenshots/2013-10-15/content.Playlist_PlayTrack_14-11-16.png><img src=fail-screenshots/2013-10-15/content.Playlist_PlayTrack_14-11-16.png height='200' width='200'/></a></span>
+                <span class="reporter-method-output"><a href=fail-screenshots/2013-10-15/content.Playlist_PlayTrack_14-11-16.png><img src=fail-screenshots/2013-10-15/content.Playlist_PlayTrack_14-11-16.png height='200' width='200'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.Music</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.NewMusic</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.Upload</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.Playlist</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">user.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.AzerMusic</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getWebDriver</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">user.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LogIn</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.Music</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SocialLinks</span>
+                <span class="method-start">18852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckGenres</span>
+                <span class="method-start">21009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckArtists</span>
+                <span class="method-start">24628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckTitles</span>
+                <span class="method-start">27174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckBlocks</span>
+                <span class="method-start">29213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PlayMusic</span>
+                <span class="method-start">30605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.AzerMusic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SocialLinks</span>
+                <span class="method-start">38081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckGenres</span>
+                <span class="method-start">40362 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckArtists</span>
+                <span class="method-start">44149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckTitles</span>
+                <span class="method-start">46810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckBlocks</span>
+                <span class="method-start">48333 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.NewMusic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SocialLinks</span>
+                <span class="method-start">49921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckArtists</span>
+                <span class="method-start">52285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckTitle</span>
+                <span class="method-start">54037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckBlocks</span>
+                <span class="method-start">55706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckAlbums</span>
+                <span class="method-start">57992 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.Music</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckHeader</span>
+                <span class="method-start">62339 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.AzerMusic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckHeader</span>
+                <span class="method-start">66829 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.NewMusic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewMusicHeader</span>
+                <span class="method-start">71431 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.Playlist</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckHeader</span>
+                <span class="method-start">75500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SocialLinks</span>
+                <span class="method-start">79330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PlayTrack</span>
+                <span class="method-start">81425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CleanPlaylist</span>
+                <span class="method-start">104076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddAndDelete</span>
+                <span class="method-start">115869 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.Upload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewMusicHeader</span>
+                <span class="method-start">125861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckBtn</span>
+                <span class="method-start">130169 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.AzerMusic</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">thearDown</span>
+                <span class="method-start">131073 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,12 @@
+content/NewMusic.class
+basic/Log.class
+content/Music.class
+page/ContentPage.class
+user/LoginTest.class
+page/MethodsPage.class
+content/Playlist.class
+page/LoginPage.class
+content/AzerMusic.class
+data/UserData.class
+basic/ScreenShotOnFailure.class
+basic/BasicTestCase.class

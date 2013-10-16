@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="basic.Log"/>
+    <listener class-name="basic.ScreenShotOnFailure"/>
+  </listeners>
+  <test name="music.nur(failed)" parallel="none">
+    <classes>
+      <class name="content.Playlist">
+        <methods>
+          <include name="CheckHeader"/>
+          <include name="CheckSocialLinks"/>
+          <include name="AddAndDeleteTrack"/>
+          <include name="thearDown"/>
+          <include name="PlayTrack"/>
+          <include name="getWebDriver"/>
+        </methods>
+      </class> <!-- content.Playlist -->
+      <class name="content.NewMusic">
+        <methods>
+          <include name="CheckHeader"/>
+        </methods>
+      </class> <!-- content.NewMusic -->
+      <class name="content.KazahMusic">
+        <methods>
+          <include name="CheckHeader"/>
+        </methods>
+      </class> <!-- content.KazahMusic -->
+      <class name="content.Music">
+        <methods>
+          <include name="CheckHeader"/>
+        </methods>
+      </class> <!-- content.Music -->
+      <class name="content.Upload">
+        <methods>
+          <include name="CheckBtn"/>
+          <include name="CheckHeader"/>
+        </methods>
+      </class> <!-- content.Upload -->
+      <class name="user.LoginTest">
+        <methods>
+          <include name="LogIn"/>
+        </methods>
+      </class> <!-- user.LoginTest -->
+    </classes>
+  </test> <!-- music.nur(failed) -->
+</suite> <!-- Failed suite [Suite] -->

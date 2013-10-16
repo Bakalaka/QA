@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="basic.Log"/>
+    <listener class-name="basic.ScreenShotOnFailure"/>
+  </listeners>
+  <test name="music.day(failed)" parallel="none">
+    <classes>
+      <class name="content.AzerMusic">
+        <methods>
+          <include name="thearDown"/>
+          <include name="getWebDriver"/>
+        </methods>
+      </class> <!-- content.AzerMusic -->
+      <class name="content.Playlist">
+        <methods>
+          <include name="PlayTrack"/>
+        </methods>
+      </class> <!-- content.Playlist -->
+      <class name="user.LoginTest">
+        <methods>
+          <include name="LogIn"/>
+        </methods>
+      </class> <!-- user.LoginTest -->
+    </classes>
+  </test> <!-- music.day(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="27" passed="26">
+  <reporter-output>
+    <line>
+      <![CDATA[FAILED: by track doesnt olay on this page http://music.day.az/249443-alex-bah-feat-kaskade-move-for-me-(remix)]]>
+    </line>
+    <line>
+      <![CDATA[<a href=fail-screenshots/2013-10-16/content.Music_PlayMusic_14-02-34.png><img src=fail-screenshots/2013-10-16/content.Music_PlayMusic_14-02-34.png height='200' width='200'/></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="138420" started-at="2013-10-16T11:01:14Z" finished-at="2013-10-16T11:03:32Z">
+    <groups>
+      <group name="Login">
+        <method signature="LoginTest.LogIn()[pri:0, instance:user.LoginTest@68f7b23c]" name="LogIn" class="user.LoginTest"/>
+      </group> <!-- Login -->
+      <group name="Header">
+        <method signature="AzerMusic.CheckHeader()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckHeader" class="content.AzerMusic"/>
+        <method signature="Music.CheckHeader()[pri:0, instance:content.Music@7d203b56]" name="CheckHeader" class="content.Music"/>
+        <method signature="NewMusic.NewMusicHeader()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="NewMusicHeader" class="content.NewMusic"/>
+      </group> <!-- Header -->
+      <group name="Playlist">
+        <method signature="Playlist.AddAndDelete()[pri:0, instance:content.Playlist@1deaca69]" name="AddAndDelete" class="content.Playlist"/>
+        <method signature="Playlist.CheckHeader()[pri:0, instance:content.Playlist@1deaca69]" name="CheckHeader" class="content.Playlist"/>
+        <method signature="Playlist.CleanPlaylist()[pri:0, instance:content.Playlist@1deaca69]" name="CleanPlaylist" class="content.Playlist"/>
+        <method signature="Playlist.PlayTrack()[pri:0, instance:content.Playlist@1deaca69]" name="PlayTrack" class="content.Playlist"/>
+        <method signature="Playlist.SocialLinks()[pri:0, instance:content.Playlist@1deaca69]" name="SocialLinks" class="content.Playlist"/>
+      </group> <!-- Playlist -->
+      <group name="Upload">
+        <method signature="Upload.CheckBtn()[pri:0, instance:content.Upload@5ffb432e]" name="CheckBtn" class="content.Upload"/>
+        <method signature="Upload.NewMusicHeader()[pri:0, instance:content.Upload@5ffb432e]" name="NewMusicHeader" class="content.Upload"/>
+      </group> <!-- Upload -->
+    </groups>
+    <test name="music.day" duration-ms="138420" started-at="2013-10-16T11:01:14Z" finished-at="2013-10-16T11:03:32Z">
+      <class name="content.AzerMusic">
+        <test-method status="PASS" signature="SocialLinks()[pri:0, instance:content.AzerMusic@f2f65c1]" name="SocialLinks" duration-ms="2568" started-at="2013-10-16T14:02:35Z" description="Проверяет отображение соц сетей на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocialLinks -->
+        <test-method status="PASS" signature="CheckGenres()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckGenres" duration-ms="2792" started-at="2013-10-16T14:02:37Z" description="Проверяет отображение жанров на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGenres -->
+        <test-method status="PASS" signature="CheckArtists()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckArtists" duration-ms="2291" started-at="2013-10-16T14:02:40Z" description="Проверяет отображение артистов на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckArtists -->
+        <test-method status="PASS" signature="CheckTitles()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckTitles" duration-ms="1504" started-at="2013-10-16T14:02:42Z" description="Проверяет отображение и корректность названий блоков на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTitles -->
+        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckBlocks" duration-ms="1454" started-at="2013-10-16T14:02:44Z" description="Проверяет отображение блоков на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBlocks -->
+        <test-method status="PASS" signature="CheckHeader()[pri:0, instance:content.AzerMusic@f2f65c1]" name="CheckHeader" duration-ms="3664" depends-on-groups="Login" started-at="2013-10-16T14:02:58Z" description="Проверяет ссылки на шапке на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-16T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckHeader -->
+      </class> <!-- content.AzerMusic -->
+      <class name="content.Music">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.Music@7d203b56]" name="getWebDriver" is-config="true" duration-ms="14" started-at="2013-10-16T14:01:14Z" finished-at="2013-10-16T14:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebDriver -->
+        <test-method status="PASS" signature="SocialLinks()[pri:0, instance:content.Music@7d203b56]" name="SocialLinks" duration-ms="7281" started-at="2013-10-16T14:01:37Z" description="Проверяет отображение соц сетей на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocialLinks -->
+        <test-method status="PASS" signature="CheckGenres()[pri:0, instance:content.Music@7d203b56]" name="CheckGenres" duration-ms="4849" started-at="2013-10-16T14:01:45Z" description="Проверяет отображение жанров на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGenres -->
+        <test-method status="PASS" signature="CheckArtists()[pri:0, instance:content.Music@7d203b56]" name="CheckArtists" duration-ms="2231" started-at="2013-10-16T14:01:49Z" description="Проверяет отображение артистов на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckArtists -->
+        <test-method status="PASS" signature="CheckTitles()[pri:0, instance:content.Music@7d203b56]" name="CheckTitles" duration-ms="1636" started-at="2013-10-16T14:01:52Z" description="Проверяет отображение и корректоность названий блоков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTitles -->
+        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.Music@7d203b56]" name="CheckBlocks" duration-ms="3976" started-at="2013-10-16T14:01:53Z" description="Проверяет отображение блоков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBlocks -->
+        <test-method status="FAIL" signature="PlayMusic()[pri:0, instance:content.Music@7d203b56]" name="PlayMusic" duration-ms="35551" started-at="2013-10-16T14:01:57Z" description="Проверяет играет ли музыка на странице скачки треков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:02:33Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at page.ContentPage.playMusic(ContentPage.java:208)
+	at content.Music.PlayMusic(Music.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[FAILED: by track doesnt olay on this page http://music.day.az/249443-alex-bah-feat-kaskade-move-for-me-(remix)]]>
+            </line>
+            <line>
+              <![CDATA[<a href=fail-screenshots/2013-10-16/content.Music_PlayMusic_14-02-34.png><img src=fail-screenshots/2013-10-16/content.Music_PlayMusic_14-02-34.png height='200' width='200'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PlayMusic -->
+        <test-method status="PASS" signature="CheckHeader()[pri:0, instance:content.Music@7d203b56]" name="CheckHeader" duration-ms="4538" depends-on-groups="Login" started-at="2013-10-16T14:02:54Z" description="Проверяет ссылки на шапке на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-16T14:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckHeader -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.Music@7d203b56]" name="thearDown" is-config="true" duration-ms="1155" started-at="2013-10-16T14:03:31Z" finished-at="2013-10-16T14:03:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+      </class> <!-- content.Music -->
+      <class name="content.NewMusic">
+        <test-method status="PASS" signature="SocialLinks()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="SocialLinks" duration-ms="1975" started-at="2013-10-16T14:02:45Z" description="Проверяет отображение соц сетей на &lt;&lt;Айзербайджанская&gt;&gt;" finished-at="2013-10-16T14:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocialLinks -->
+        <test-method status="PASS" signature="CheckArtists()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="CheckArtists" duration-ms="1594" started-at="2013-10-16T14:02:47Z" description="Проверяет отображение артистов на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-16T14:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckArtists -->
+        <test-method status="PASS" signature="CheckTitle()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="CheckTitle" duration-ms="1188" started-at="2013-10-16T14:02:49Z" description="проверяет отображение и корректоность имен блоков на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-16T14:02:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTitle -->
+        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="CheckBlocks" duration-ms="1368" started-at="2013-10-16T14:02:50Z" description="Проверяет отображение блоков на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-16T14:02:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBlocks -->
+        <test-method status="PASS" signature="CheckAlbums()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="CheckAlbums" duration-ms="2150" started-at="2013-10-16T14:02:51Z" description="Проверяет отображение альбомов на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-16T14:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAlbums -->
+        <test-method status="PASS" signature="NewMusicHeader()[pri:0, instance:content.NewMusic@5dd6b6fa]" name="NewMusicHeader" duration-ms="2723" depends-on-groups="Login" started-at="2013-10-16T14:03:02Z" description="Проверяет ссылки на шапке на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-16T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewMusicHeader -->
+      </class> <!-- content.NewMusic -->
+      <class name="content.Upload">
+        <test-method status="PASS" signature="NewMusicHeader()[pri:0, instance:content.Upload@5ffb432e]" name="NewMusicHeader" duration-ms="3553" depends-on-groups="Login" started-at="2013-10-16T14:03:27Z" description="Проверяет ссылки на шапке на &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-10-16T14:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewMusicHeader -->
+        <test-method status="PASS" signature="CheckBtn()[pri:0, instance:content.Upload@5ffb432e]" name="CheckBtn" duration-ms="849" depends-on-groups="Login" started-at="2013-10-16T14:03:30Z" description="Проверяет есть ли кнопка *загрузить* на &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-10-16T14:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBtn -->
+      </class> <!-- content.Upload -->
+      <class name="user.LoginTest">
+        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.LoginTest@68f7b23c]" name="LogIn" duration-ms="23440" started-at="2013-10-16T14:01:14Z" description="Тестируем логин" finished-at="2013-10-16T14:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+      </class> <!-- user.LoginTest -->
+      <class name="content.Playlist">
+        <test-method status="PASS" signature="CheckHeader()[pri:0, instance:content.Playlist@1deaca69]" name="CheckHeader" duration-ms="3009" depends-on-groups="Login" started-at="2013-10-16T14:03:05Z" description="Проверяет ссылки на шапке &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-16T14:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckHeader -->
+        <test-method status="PASS" signature="SocialLinks()[pri:0, instance:content.Playlist@1deaca69]" name="SocialLinks" duration-ms="1547" depends-on-groups="Login" started-at="2013-10-16T14:03:08Z" description="Проверяет отображение соц сетей на &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-16T14:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocialLinks -->
+        <test-method status="PASS" signature="PlayTrack()[pri:0, instance:content.Playlist@1deaca69]" name="PlayTrack" duration-ms="6032" depends-on-groups="Login" started-at="2013-10-16T14:03:09Z" description="Проверяет играет ли трек на &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-16T14:03:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlayTrack -->
+        <test-method status="PASS" signature="CleanPlaylist()[pri:0, instance:content.Playlist@1deaca69]" name="CleanPlaylist" duration-ms="2163" depends-on-groups="Login" started-at="2013-10-16T14:03:15Z" description="Очищает плейлист от треков" finished-at="2013-10-16T14:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CleanPlaylist -->
+        <test-method status="PASS" signature="AddAndDelete()[pri:0, instance:content.Playlist@1deaca69]" name="AddAndDelete" duration-ms="9251" depends-on-groups="Login" started-at="2013-10-16T14:03:17Z" description="Добавляет и удаляет треки в плейлисте" finished-at="2013-10-16T14:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddAndDelete -->
+      </class> <!-- content.Playlist -->
+    </test> <!-- music.day -->
+  </suite> <!-- Suite -->
+</testng-results>
